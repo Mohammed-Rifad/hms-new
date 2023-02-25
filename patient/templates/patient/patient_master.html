@@ -108,8 +108,14 @@
                             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#"
                                 id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown"
                                 aria-expanded="false">
-                                <img src="{{ request.session.pic }}"
-                                    class="rounded-circle" height="50" alt="Avatar" />
+                                {% if not request.session.pic == 'default-user.webp' %}
+                                <img class="rounded-circle" height="50" alt="Avatar" src="{{ request.session.pic }}">
+
+                                {% else %}
+                                <img class="rounded-circle" height="50" alt="Avatar" src="{% static 'default-user.webp' %}">
+
+                                {% endif %}
+                                    
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>

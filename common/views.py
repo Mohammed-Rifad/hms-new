@@ -70,14 +70,7 @@ def login(request):
     user_type = request.GET['user'] # getting query string value from url
     msg = ''
     
-    # if 'patient' in request.session :
-    #     return redirect('patient:home')
-
-    # if 'doctor' in request.session :
-    #     return redirect('doctor:dr_home')
-
-    # if 'staff' in request.session :
-    #     return redirect('staff:staff_home') 
+     
 
     if request.method == 'POST':
         username = request.POST['username']
@@ -94,7 +87,7 @@ def login(request):
                     request.session['pic'] = staff.pic.url
                     return redirect('staff:staff_home')
                 else:
-                    msg = 'Account Inaactive'
+                    msg = 'Account Inactive'
             except :
                 msg = 'Invalid Username Or Password'
 
@@ -112,7 +105,12 @@ def login(request):
             try :
                 patient = Patient.objects.get(email = username, phone = password)
                 request.session['patient'] = patient.id
+                # if not patient.pic.url == 'static/default-user.png':
+                #     print('truee')
                 request.session['pic'] = patient.pic.url
+                # else:
+                #     request.session['pic'] = 'static/default-user.png'
+
                 return redirect('patient:home')
       
             except:

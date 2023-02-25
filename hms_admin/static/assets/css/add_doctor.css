@@ -11,7 +11,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     padding: 50px;
-    background: whitesmoke;
+    background: rgb(232, 227, 227);
     border-radius: 5px;
     position: relative;
     font-family: 'Libre Franklin', sans-serif;
@@ -35,7 +35,7 @@ form>div>input {
     background: whitesmoke;
     border-bottom: 1px solid silver;
     width: 100%;
-    color: gray;
+    color: rgb(198, 193, 193);
 }
 
 form>div>select {

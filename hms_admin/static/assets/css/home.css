@@ -177,7 +177,7 @@
 
   .basic-card-aqua .card-content,
   .basic-card .card-link a {
-    color: #fff;
+    color: #f2e7e7;
   }
 
   .basic-card-aqua .card-link {
@@ -185,7 +185,7 @@
   }
 
   .basic-card-aqua .card-link a:after {
-    background: #fff;
+    background: #e6dede;
   }
 
   .basic-card-lips {
@@ -235,7 +235,7 @@
   }
 
   .basic-card-dark .card-text {
-    color: #dcdcdcdd;
+    color: #f9f0f0dd;
   }
 
   .basic-card-dark .card-link {
@@ -243,7 +243,7 @@
   }
 
   .basic-card-dark .card-link a:after {
-    background: #eee;
+    background: #e9dcdc;
   }
 
   /* Image Card */
@@ -391,7 +391,7 @@
   .img-card.iCard-style3 .card-title {
     top: 80%;
     font-size: 30px;
-    color: #fff;
+    color: #e6d7d7;
     position: absolute;
     width: 100%;
     font-family: "Roboto", sans-serif;

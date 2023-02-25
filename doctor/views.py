@@ -7,9 +7,11 @@ from patient.models import Booking
 from datetime import datetime
 from .serializers import *
 from json import loads
+from common.auth_guard import auth_doctor
 # Create your views here.
 
 
+@auth_doctor
 def doctor_home(request):
     doctor = Doctor.objects.filter(
         id=request.session['doctor']).values('doctor_name')

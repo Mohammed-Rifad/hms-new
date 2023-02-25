@@ -56,12 +56,12 @@
       margin-top: 20px;
     }
     .layout-wrapper{
-      background-color: rgb(247, 242, 242);
+      background-color: rgb(233, 240, 244);
       width: 100%;
       height: 1200px;
       margin-left: 15px;
     }
-    
+   
   </style>
 
 
@@ -116,11 +116,11 @@
                           <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4"></use>
                         </g>
                       </g>
-                      <g id="Triangle"
+                      <!-- <g id="Triangle"
                         transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) ">
                         <use fill="#696cff" xlink:href="#path-5"></use>
                         <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
-                      </g>
+                      </g> -->
                     </g>
                   </g>
                 </g>
@@ -132,6 +132,10 @@
             <i class="bx bx-chevron-left bx-sm align-middle"></i>
           </a>
         </div>
+         
+        
+        <h4 class="text-dark"> Welcome Dr.Admin</h4>
+       
 
         <div class="menu-inner-shadow"></div>
 
@@ -139,79 +143,79 @@
 
           <!-- Dashboard -->
           <li class="menu-item active">
-            <a href="{% url 'hms_admin:admin_home' %}" class="menu-link">
+            <a href="{% url 'hms_admin:admin_home' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
-              <div data-i18n="Analytics">Dashboard</div>
+              <div data-i18n="Analytics" class="text-dark">Dashboard</div>
             </a>
           </li>
 
-          <li class="menu-header small text-uppercase"><span class="menu-header-text">Doctor</span></li>
+          <li class="menu-header small text-uppercase"><span class="menu-header-text text-dark">Doctor</span></li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:add_dr' %}" class="menu-link">
+            <a href="{% url 'hms_admin:add_dr' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-              <div data-i18n="Authentications">Add Doctor</div>
+              <div data-i18n="Authentications" class="text-dark">Add Doctor</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:view_dr' %}" class="menu-link">
+            <a href="{% url 'hms_admin:view_dr' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-              <div data-i18n="Authentications">View Doctor</div>
+              <div data-i18n="Authentications" class="text-dark">View Doctor</div>
             </a>
           </li>
 
           
-          <li class="menu-header small text-uppercase"><span class="menu-header-text">Staff</span></li>
+          <li class="menu-header small text-uppercase"><span class="menu-header-text text-dark">Staff</span></li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:add_staff' %}" class="menu-link">
+            <a href="{% url 'hms_admin:add_staff' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-              <div data-i18n="Authentications">Add Staff</div>
+              <div data-i18n="Authentications" class="text-dark">Add Staff</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:view_staff' %}" class="menu-link">
+            <a href="{% url 'hms_admin:view_staff' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-              <div data-i18n="Authentications">View Staff</div>
+              <div data-i18n="Authentications" class="text-dark">View Staff</div>
             </a>
           </li>
 
           <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Patients</span>
+            <span class="menu-header-text text-dark">Patients</span>
           </li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:view_pt' %}" class="menu-link">
+            <a href="{% url 'hms_admin:view_pt' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-detail"></i>
-              <div data-i18n="Form Layouts">Patient Details</div>
+              <div data-i18n="Form Layouts" class="text-dark">Patient Details</div>
             </a>
           </li>
 
           <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Appointment</span>
+            <span class="menu-header-text text-dark">Appointment</span>
           </li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:appointments' %}" class="menu-link">
+            <a href="{% url 'hms_admin:appointments' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-dock-top"></i>
-              <div data-i18n="Account Settings">View Appointments</div>
+              <div data-i18n="Account Settings" class="text-dark">View Appointments</div>
             </a>
           </li>
 
           <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Services</span>
+            <span class="menu-header-text text-dark">Services</span>
           </li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:add_dt' %}" class="menu-link">
+            <a href="{% url 'hms_admin:add_dt' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-detail"></i>
-              <div data-i18n="Form Elements">Add Department</div>
+              <div data-i18n="Form Elements" class="text-dark">Add Department</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="{% url 'hms_admin:view_dt' %}" class="menu-link">
+            <a href="{% url 'hms_admin:view_dt' %}" class="menu-link text-decoration-none">
               <i class="menu-icon tf-icons bx bx-detail"></i>
-              <div data-i18n="Form Layouts">View Department</div>
+              <div data-i18n="Form Layouts" class="text-dark">View Department</div>
             </a>
           </li>
 
           <li class="menu-header small text-uppercase">
-            <a href="{% url 'common:index' %}" class="menu-header-text">Logout</a>
+            <a href="{% url 'common:index' %}" class="menu-header-text text-dark text-decoration-none">Logout</a>
           </li>
 
         </ul>
